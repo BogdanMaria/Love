@@ -48,19 +48,6 @@ h1 {
     color: #252525;
 }
 
-/* Main content */
-main {
-    background-color: lightblue;
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
-    margin-top: 47px;
-}
-
-/* Footer */
-footer {
-    background-color: orange;
-}
-
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -93,4 +80,37 @@ nav {
 }
   #menu>li {
     margin-bottom: 1em;
+}
+
+/* Main content */
+main {
+    background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 47px;
+}
+
+/* Footer */
+footer {
+    background-color: orange;
+}
+/* Media query: tablets amd larger (768px and up)*/
+@media screen and (min-width: 768px) {
+    /*Header*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }   
+    #menu {
+        display: flex;
+    } 
+    #menu > li {
+        padding-left: 1rem;
+    }
+    .nav-toggle-label {
+        display: none;
+    }
 }
