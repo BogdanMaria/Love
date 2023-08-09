@@ -53,11 +53,12 @@ h1 {
     letter-spacing: 4px;
     list-style-type: none;
 }
+
 .active {
     border-bottom: 1px solid #3a3a3a;
-  }
+}
 
-  /* Navbar styles with dropdown menu*/
+/* Navbar styles with dropdown menu*/
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -68,17 +69,21 @@ nav {
     display: none;
     top: 100%;
 }
+
 /* Nav toggle*/
 #nav-toggle:checked~nav {
     display: block;
 }
+
 #nav-toggle {
     display: none;
 }
+
 .nav-toggle-label {
     font-size: 2rem;
 }
-  #menu>li {
+
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -92,12 +97,13 @@ main {
 
 /* Footer */
 #social-networks {
-text-align: center;
-padding: 20px 0;
-display: flex;
-justify-content: space-evenly;
-list-style-type: none;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
@@ -106,6 +112,7 @@ list-style-type: none;
 
 /* Media query: tablets amd larger (768px and up)*/
 @media screen and (min-width: 768px) {
+
     /*Header*/
     nav {
         display: block;
@@ -113,21 +120,26 @@ list-style-type: none;
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
-    }   
+    }
+
     #menu {
         display: flex;
-    } 
-    #menu > li {
+    }
+
+    #menu>li {
         padding-left: 1rem;
     }
+
     .nav-toggle-label {
         display: none;
     }
+
     #logo {
         font-size: 280%;
         line-height: 75px;
         padding: 0 0.5rem;
     }
+
     main {
         margin-top: 79px;
     }
@@ -137,6 +149,6 @@ list-style-type: none;
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
-        
-    }
+
+}
 }
